@@ -5,10 +5,10 @@
 using namespace std;
 
 class CombinationGenerator {
-	vector<int> elements;
-	void _generate(vector<vector<int>>&, vector<int>, int, size_t&);
+    vector<int> elements;
+    void _generate(vector<vector<int>>&, vector<int>, int, size_t&);
 public:
-	CombinationGenerator(vector<int> elements) { this->elements = elements; };
-	vector<vector<int>> generate(size_t);
-	virtual bool areCompatible(int, int);
+    CombinationGenerator(vector<int> elements) { this->elements = elements; };
+    vector<vector<int>> generate(size_t);
+    virtual bool areCompatible(int, int);
 };

@@ -6,10 +6,10 @@
 using namespace std;
 
 class JobQueue {
-	queue<int> jobs;
-	mutex m;
-	condition_variable cv;
+    queue<int> jobs;
+    mutex m;
+    condition_variable cv;
 public:
-	void addJob(int);
-	int getJob();
+    void addJob(int);
+    int getJob();
 };
